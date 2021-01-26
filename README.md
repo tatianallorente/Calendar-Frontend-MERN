@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Frontend MERN - Calendar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>Frontend para el proyecto "Calendar", hecho con ReactJS.\
+>Aplicación desplegada en: ![Heroku](https://img.shields.io/badge/-430098?style=flat&logo=Heroku&logoColor=white) [mern-calendar-tatiana](https://mern-calendar-tatiana.herokuapp.com/)\
+>Ver Backend: ![GitHub](https://img.shields.io/badge/-181717?style=flat&logo=GitHub&logoColor=white) [Calendar-Backend-MERN](https://github.com/tatianallorente/Calendar-Backend-MERN)
+---
+# Tecnologías usadas
 
-## Available Scripts
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=white)
+![Redux](https://img.shields.io/badge/-Redux-764ABC?style=flat&logo=redux&logoColor=white)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
 
-In the project directory, you can run:
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white)
+![Font Awesome](https://img.shields.io/badge/-FontAwesome-339AF0?style=flat&logo=font-awesome&logoColor=white)
 
-### `npm start`
+# Herramientas utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- ![Visual Studio Code](https://img.shields.io/badge/-007ACC?style=flat&logo=visual-studio-code&logoColor=white) Visual Studio Code
+- ![MongoDB](https://img.shields.io/badge/-47A248?style=flat&logo=MongoDB&logoColor=white) MongoDB Compass (MongoDB Atlas)
+- ![Postman](https://img.shields.io/badge/-FF6C37?style=flat&logo=Postman&logoColor=white) Postman
+- ![Heroku](https://img.shields.io/badge/-430098?style=flat&logo=Heroku&logoColor=white) Heroku
+- ![GitHub](https://img.shields.io/badge/-181717?style=flat&logo=GitHub&logoColor=white) Github
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Funcionalidades
 
-### `npm test`
+- Registro de usuarios
+- Autenticación
+- Vistas del calendario: Mes, Semana, Día y Agenda
+- CRUD de eventos del calendario: 
+    - Ver eventos
+    - Crear evento
+    - Editar evento
+    - Borrar evento
+- Los usuarios no podrán editar/borrar los eventos creados por otro usuarios.
+- Validación en todos los formularios de la aplicación, mostrando ventanas modales de error.
+- Recordar la última vista que consultó el usuario.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Capturas de pantalla
 
-### `npm run build`
+## Registro/Login
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![login](https://user-images.githubusercontent.com/73536562/105878512-6a532600-6001-11eb-9ca6-4e7ded85f43a.png)
+![login-error](https://user-images.githubusercontent.com/73536562/105878517-6aebbc80-6001-11eb-86e8-2bfb9afdf332.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Vistas del calendario
 
-### `npm run eject`
+![vista-mes](https://user-images.githubusercontent.com/73536562/105878407-4c85c100-6001-11eb-8e37-2497ee0efb0d.png)
+![vista-semana](https://user-images.githubusercontent.com/73536562/105878524-6b845300-6001-11eb-96ea-32b4119bc0b3.png)
+![vista-dia](https://user-images.githubusercontent.com/73536562/105878523-6aebbc80-6001-11eb-835f-4ba6afc60249.png)
+![vista-agenda](https://user-images.githubusercontent.com/73536562/105878518-6aebbc80-6001-11eb-9032-6597ffdf5fc6.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Crear, editar y borrar eventos
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![crear-evento](https://user-images.githubusercontent.com/73536562/105878508-69ba8f80-6001-11eb-8e1b-af3bd50cdcec.png)
+![editar-evento](https://user-images.githubusercontent.com/73536562/105878509-6a532600-6001-11eb-979a-8bbeb507e1fe.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Instalaciones necesarias
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Rutas 
 
-## Learn More
+    npm install react-router-dom
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Calendario
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    npm i react-big-calendar
 
-### Code Splitting
+## Fechas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    npm i moment
 
-### Analyzing the Bundle Size
+## Modal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    npm i react-modal
 
-### Making a Progressive Web App
+## Selector de fechas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    npm i react-datetime-picker
 
-### Advanced Configuration
+## Mostrar mensajes de error (modales)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    npm i sweetalert2
 
-### Deployment
+## Redux
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    npm install react-redux
 
-### `npm run build` fails to minify
+## Para las tareas asíncronas, necesitamos un middleware, en este caso Thunk
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    npm i redux-thunk

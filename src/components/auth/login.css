@@ -1,0 +1,64 @@
+/* Login form */
+.login-form {
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    padding: 5%;
+}
+
+.login-form-login {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.login-form-login h3 {
+    text-align: center;
+    color: #333;
+}
+
+.login-form-register {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: var(--primary-color);
+}
+
+.login-form-register h3 {
+    text-align: center;
+    color: var(--white);
+}
+
+.login-container form {
+    padding: 10%;
+}
+
+/* Buttons */
+.btnSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+
+    transition: all .2s;
+}
+
+.btnSubmit:hover {
+    transform: scaleX(1.05) scaleY(1.1);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.btnSubmit:focus {
+    outline: 0;
+    opacity: .9;
+}
+
+.login-form-login .btnSubmit {
+    color:var(--white);
+    background-color:var(--primary-color);
+}
+
+.login-form-register .btnSubmit {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+
+  
