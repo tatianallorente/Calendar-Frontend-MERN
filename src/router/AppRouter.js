@@ -24,7 +24,7 @@ export const AppRouter = () => {
     }, [dispatch]);
 
     if (checking) {
-        return (<h5 class="loading">Espere...</h5>);
+        return (<h5 className="loading">Espere...</h5>);
     }
 
     return (
